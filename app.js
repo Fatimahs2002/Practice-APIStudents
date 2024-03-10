@@ -25,4 +25,11 @@ app.get('/students', function (req, res) {
      res.send(data);
    })
  
-app.listen(5000);
+// app.listen(5000);
+const PORT = process.env.PORT || 3030;
+
+// your code
+
+app.listen(PORT, () => {
+  console.log(`server started on port ${PORT}`);
+});
